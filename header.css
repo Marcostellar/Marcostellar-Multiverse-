@@ -1,0 +1,170 @@
+﻿.site-header {
+	background: #232946;
+	color: #fff;
+	padding: 0;
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.header-flex {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 18px 0;
+}
+
+@media (max-width: 900px) {
+	.header-flex {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 10px;
+	}
+}
+
+.head-text {
+	text-align: center;
+	font-size: 2.5rem;
+	line-height: 1.2;
+	margin: 0 12px 0 0;
+	width: 100%;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+/* Navbar styles */
+.navbar {
+	background-color: #333;
+	padding: 15px 0;
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+}
+
+.logo {
+	color: #fff;
+	font-size: 1.5rem;
+	text-decoration: none;
+	font-weight: bold;
+	/* Reduced glow */
+	text-shadow: 0 0 2px #a259f7, 0 0 4px #fff2ff;
+}
+
+.logo-image {
+	height: 100px;
+	width: 100px;
+	display: block;
+	border-radius: 50%;
+	object-fit: cover;
+	box-shadow: 00 8px 16px rgba(0, 0, 0, 0.04);
+}
+
+.logo span {
+	color: #a259f7;
+	font-size: 2.2rem;
+	/* Reduced glow */
+	text-shadow: 0 0 3px #fff, 0 0 5px #a259f7;
+}
+
+.nav-menu {
+	list-style: none;
+	display: flex;
+	gap: 20px;
+}
+
+.nav-link {
+	color: #fff;
+	text-decoration: none;
+	font-size: 1rem;
+	transition: color 0.3s;
+}
+
+.nav-link:hover {
+	color: #ff5733;
+}
+
+.nav-link:hover,
+.nav-link.active {
+	color: #fff;
+	background: #5a32a3;
+	/* Reduced glow */
+	box-shadow: 0 0 4px #a259f7, 0 0 6px #fff2ff;
+}
+
+/* Hamburger icon */
+.nav-toggle {
+	display: none;
+	flex-direction: column;
+	cursor: pointer;
+	width: 40px;
+	height: 40px;
+	justify-content: center;
+	align-items: center;
+	/* Add for visibility */
+	border: 2px solid #fff;
+	background: #333;
+	z-index: 1100;
+}
+
+.nav-toggle span {
+	width: 25px;
+	height: 3px;
+	background-color: #fff;
+	margin: 2px 0;
+	transition: all 0.3s ease;
+}
+
+/* Mobile menu hidden by default */
+.nav-menu {
+	display: flex;
+}
+
+/* Responsive styles */
+@media (max-width: 1440px) {
+	.nav-toggle {
+		display: flex;
+	}
+
+	.nav-menu {
+		display: none;
+		flex-direction: column;
+		position: absolute;
+		top: 60px;
+		left: 0;
+		right: 0;
+		background-color: #333;
+		padding: 15px;
+	}
+
+	.nav-menu.active {
+		display: flex;
+	}
+
+	.nav-menu li {
+		margin: 10px 0;
+	}
+
+	/* Hamburger animation to X */
+	.nav-toggle.active span:nth-child(1) {
+		transform: rotate(45deg) translate(5px, 5px);
+	}
+
+	.nav-toggle.active span:nth-child(2) {
+		opacity: 0;
+	}
+
+	.nav-toggle.active span:nth-child(3) {
+		transform: rotate(-45deg) translate(7px, -7px);
+	}
+}
+
+@media (max-width: 1440px) {
+	.nav-toggle {
+		display: flex !important;
+	}
+}

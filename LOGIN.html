@@ -1,0 +1,49 @@
+﻿<?php
+   session_start();
+   include('dbcon.php');
+   ?>
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>LOGIN</title>
+        <link rel="stylesheet" href="LOGIN.css">
+        <div class='backgruond-image'><img src=></div>
+    </head>
+
+    <body class="aghs">
+        <p class="text"><CITE>WELCOME TO TERRA </cite></p>
+
+        <a href="Blog.html">BLOG</a>
+        <hr>
+        <div id='box'>
+            <div class="form">
+                <form action="login.php" method="LOGIN">
+
+                    <div align="center">
+                        <div>
+                            <label>Username</label>
+                            <input type="text" name="Username" placeholder='e.gJane Doe'>
+                        </div>
+                        <br>
+                        <div>
+                            <label>Email </label>
+                            <input type="email" name="email" placeholder='Email address'>
+                        </div>
+                        <br>
+                        <div>
+                            <label>Password<label>
+                                    <input type="password" name="password" placeholder='Enter password'>
+                                    <div>
+                                    </div>
+
+                                    <a href="Map.html"><button class='submit'>SUBMIT</button></a>
+                        </div>
+                        <br>
+                </form>
+            </div>
+        </div>
+    </body>
+
+</html>
