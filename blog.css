@@ -1,0 +1,154 @@
+﻿body {
+  font-family: 'Roboto', Arial, sans-serif;
+  background: #181823;
+  color: #f3f3f3;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.blog-hero {
+  background: #232946;
+  padding: 36px 24px 24px 24px;
+  border-radius: 0 0 18px 18px;
+  margin-bottom: 32px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  color: #f3f3f3;
+}
+
+.blog-hero h1 {
+  margin: 0 0 10px 0;
+  font-size: 2.2rem;
+  color: #3be8b0;
+  font-weight: 700;
+}
+
+.subtitle {
+  color: #a1a1aa;
+  font-size: 1rem;
+  margin-bottom: 18px;
+}
+
+.blog-section {
+  margin-bottom: 40px;
+}
+
+.blog-post {
+  background: #20202a;
+  border-radius: 10px;
+  margin-bottom: 28px;
+  padding: 28px 22px;
+  box-shadow: 0 2px 8px rgba(35, 41, 70, 0.08);
+  border-left: 6px solid #3be8b0;
+  color: #f3f3f3;
+}
+
+.blog-post h2 {
+  margin-top: 0;
+  color: #3be8b0;
+  font-weight: 600;
+}
+
+.blog-post ul {
+  margin: 12px 0 0 18px;
+  padding: 0;
+}
+
+.language-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.lang-block {
+  background: #232946;
+  border: 2px solid #3be8b0;
+  border-radius: 8px;
+  padding: 16px 14px;
+  flex: 1 1 220px;
+  min-width: 220px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 8px #23294622;
+  color: #f3f3f3;
+  text-align: center;
+}
+
+.lang-block h3 {
+  color: #3be8b0;
+  font-weight: 600;
+}
+
+.lang-block img {
+  display: block;
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 4px #23294622;
+}
+
+.highlight {
+  background: #3be8b0 !important;
+  color: #232946;
+  font-weight: 600;
+  border: none;
+  box-shadow: none;
+}
+
+.site-footer {
+  background: #232946;
+  color: #f3f3f3;
+  text-align: center;
+  padding: 18px 0;
+  font-size: 1rem;
+  border-top: 3px solid #3be8b0;
+  box-shadow: 0 0 12px #23294622;
+}
+
+.button,
+button,
+input[type="submit"] {
+  background: #3be8b0;
+  color: #232946;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-weight: bold;
+}
+
+.button:hover,
+button:hover,
+input[type="submit"]:hover {
+  background: #2dd6a7;
+}
+
+@media (max-width: 700px) {
+  .container {
+    width: 98%;
+    padding: 0 2vw;
+  }
+
+  .blog-hero {
+    padding: 22px 8px 16px 8px;
+  }
+
+  .blog-post {
+    padding: 16px 8px;
+  }
+
+  .language-list {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
